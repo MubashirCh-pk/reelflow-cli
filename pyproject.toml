@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reelflow"
+version = "1.0.0"
+description = "Instagram video downloader for the terminal"
+requires-python = ">=3.8"
+dependencies = ["yt-dlp"]
+
+[project.scripts]
+reelflow = "reelflow.cli:main"
+
+[tool.setuptools]
+packages = ["reelflow"]
